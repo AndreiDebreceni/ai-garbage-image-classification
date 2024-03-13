@@ -6,3 +6,4 @@ dependencies:
   - python
   - conda-forge::jupyterlab
   - pandas
+  - Pillow
