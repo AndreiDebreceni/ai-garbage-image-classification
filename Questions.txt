@@ -1,0 +1,30 @@
+We have 6 classes of images spread in 6 folders and we have 6 types of items:
+-carboard
+-glass
+-metal
+-paper
+-plastic
+-trash
+
+We need to analize the data:
+-check distribution of files
+-image resolution
+-aspect ratio
+-file format type
+
+We need to aggregate the file name with their respective label in a tabular form.
+1. Let's define label codes.
+-carboard = 0
+-glass = 1
+-metal = 2
+-paper = 3
+-plastic = 4
+-trash = 5
+
+
+
+
+Questions:
+
+Our datas are fully labeled?
+What we should do with "trash"
