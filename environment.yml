@@ -1,0 +1,7 @@
+name: image-classification-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python
+  - conda-forge::jupyterlab
