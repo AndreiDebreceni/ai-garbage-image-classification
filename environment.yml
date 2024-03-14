@@ -3,7 +3,9 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python
+  - python=3.8.18
   - conda-forge::jupyterlab
   - pandas
   - Pillow
+  - tensorflow
+  - scikit-learn

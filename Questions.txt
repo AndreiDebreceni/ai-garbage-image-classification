@@ -1,3 +1,7 @@
+We want to make a multi class classification , because we have multiple classes and at the moment each image belong to a single unique class.
+
+
+
 We have 6 classes of images spread in 6 folders and we have 6 types of items:
 -carboard
 -glass
@@ -21,6 +25,29 @@ We need to aggregate the file name with their respective label in a tabular form
 -plastic = 4
 -trash = 5
 
+We need to process the data before feeding the model:
+- label encoding
+- spliting the date (training data / test data / validation)
+- normalize the data
+
+
+We need to have a multy class clasifier, so we should create a convolutional neural network:
+
+High lvl description NN:
+- we need to have a convoluted with feed foward network at the end.
+- we know that we have the size of images 512x384x3(rgb) - input layer = 589824 neurons and same format of images
+- the output layer we should have a softmax activation function
+* we need to specify:
+- loss function - (Categorical Cross-Entropy - Used for multi-class classification tasks (more than two classes)
+- optimizer( We need to try different optimizers)
+- hyperparameters
+- we will choose TensorFlow/Keras (deep learning framework to define the architecture of your neural network model)
+- train the model on training data.
+- test the model with test data
+
+
+
+
 
 
 
@@ -28,3 +55,4 @@ Questions:
 
 Our datas are fully labeled?
 What we should do with "trash"
+What technology we will use? (PyTorch, Tensorflow, scikit-learn) ?
