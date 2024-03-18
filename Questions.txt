@@ -45,14 +45,15 @@ High lvl description NN:
 - train the model on training data.
 - test the model with test data
 
-
-
-
-
-
-
 Questions:
 
 Our datas are fully labeled?
 What we should do with "trash"
 What technology we will use? (PyTorch, Tensorflow, scikit-learn) ?
+
+
+Notes:
+- we tryed different aproaces to build the model with different layers and we noticed that the model does not work good and our prediction was preety bad.
+- we tryed to reduce the number of features from 6 to 3 , and we don't noticed any improvements.
+- we added more photos to the dataset and we noticed that our model with 3 features now learns to fast and from 3 epochs and we have a big accuracy,
+    the model prediction started to be good and relevant
