@@ -1,7 +1,4 @@
 We want to make a multi class classification , because we have multiple classes and at the moment each image belong to a single unique class.
-
-
-
 We have 6 classes of images spread in 6 folders and we have 6 types of items:
 -carboard
 -glass
@@ -54,6 +51,7 @@ What technology we will use? (PyTorch, Tensorflow, scikit-learn) ?
 
 Notes:
 - we tryed different aproaces to build the model with different layers and we noticed that the model does not work good and our prediction was preety bad.
-- we tryed to reduce the number of features from 6 to 3 , and we don't noticed any improvements.
+- we tryed to reduce the number of features from 6 to 3 , and we did not noticed any improvements.
 - we added more photos to the dataset and we noticed that our model with 3 features now learns to fast and from 3 epochs and we have a big accuracy,
     the model prediction started to be good and relevant
+- We fine tuned the model and we finally reach a good accuracy and good validation accuracy.    
