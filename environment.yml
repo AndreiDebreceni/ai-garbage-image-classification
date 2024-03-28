@@ -10,3 +10,4 @@ dependencies:
   - tensorflow
   - scikit-learn
   - matplotlib
+  - conda-forge::seaborn
