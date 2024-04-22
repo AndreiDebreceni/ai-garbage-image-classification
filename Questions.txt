@@ -1,46 +1,46 @@
 We want to make a multi class classification , because we have multiple classes and at the moment each image belong to a single unique class.
 We have 6 classes of images spread in 6 folders and we have 6 types of items:
--carboard
--glass
--metal
--paper
--plastic
--trash
+    -carboard
+    -glass
+    -metal
+    -paper
+    -plastic
+    -trash
 
 We need to analize the data:
--check distribution of files
--image resolution
--aspect ratio
--file format type
+    -check distribution of files
+    -image resolution
+    -aspect ratio
+    -file format type
 
 We need to aggregate the file name with their respective label in a tabular form.
 1. Let's define label codes.
--carboard = 0
--glass = 1
--metal = 2
--paper = 3
--plastic = 4
--trash = 5
+    -carboard = 0
+    -glass = 1
+    -metal = 2
+    -paper = 3
+    -plastic = 4
+    -trash = 5
 
 We need to process the data before feeding the model:
-- label encoding
-- spliting the date (training data / test data / validation)
-- normalize the data
+    - label encoding
+    - spliting the date (training data / test data / validation)
+    - normalize the data
 
 
 We need to have a multy class clasifier, so we should create a convolutional neural network:
 
-High lvl description NN:
-- we need to have a convoluted with feed foward network at the end.
-- we know that we have the size of images 512x384x3(rgb) - input layer = 589824 neurons and same format of images
-- the output layer we should have a softmax activation function
-* we need to specify:
-- loss function - (Categorical Cross-Entropy - Used for multi-class classification tasks (more than two classes)
-- optimizer( We need to try different optimizers)
-- hyperparameters
-- we will choose TensorFlow/Keras (deep learning framework to define the architecture of your neural network model)
-- train the model on training data.
-- test the model with test data
+    High lvl description NN:
+        - we need to have a convoluted with feed foward network at the end.
+        - we know that we have the size of images 512x384x3(rgb) - input layer = 589824 neurons and same format of images
+        - the output layer we should have a softmax activation function
+    We need to specify:
+        - loss function - (Categorical Cross-Entropy) - Used for multi-class classification tasks (more than two classes)
+        - optimizer( We need to try different optimizers)
+        - hyperparameters
+        - we will choose TensorFlow/Keras (deep learning framework to define the architecture of your neural network model)
+        - train the model on training data.
+        - test the model with test data
 
 Questions:
 
@@ -50,8 +50,8 @@ What technology we will use? (PyTorch, Tensorflow, scikit-learn) ?
 
 
 Notes:
-- we tryed different aproaces to build the model with different layers and we noticed that the model does not work good and our prediction was preety bad.
-- we tryed to reduce the number of features from 6 to 3 , and we did not noticed any improvements.
-- we added more photos to the dataset and we noticed that our model with 3 features now learns to fast and from 3 epochs and we have a big accuracy,
-    the model prediction started to be good and relevant
-- We fine tuned the model and we finally reach a good accuracy and good validation accuracy.    
+    - we tryed different aproaces to build the model with different layers and we noticed that the model does not work good and our prediction was preety bad.
+    - we tryed to reduce the number of features from 6 to 3 , and we did not noticed any improvements.
+    - we added more photos to the dataset and we noticed that our model with 3 features now learns to fast and from 3 epochs and we have a big accuracy,
+      the model prediction started to be good and relevant.
+    - We fine tuned the model and we finally reach a good accuracy and good validation accuracy.    

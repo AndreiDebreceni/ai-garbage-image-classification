@@ -1,9 +1,9 @@
-name: image-classification-env
+name: image-classification
 channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.9
+  - python=3.10
   - conda-forge::jupyterlab
   - pandas
   - Pillow
